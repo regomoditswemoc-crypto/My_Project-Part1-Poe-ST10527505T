@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Sunrise Bakery</title>
+
+<style>
+/* PINK BAKERY AESTHETIC */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+background: linear-gradient(135deg, #fff5f5 0%, #ffe4e1 100%);
+font-family: 'Open Sans', sans-serif;
+color: #5a3e3e;
+line-height: 1.6;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.container {
+width: 90%;
+max-width: 1100px;
+margin: 0 auto;
+padding: 20px 0;
+}
+
+/* Header */
+header {
+background-color: rgba(255, 255, 255, 0.85);
+padding: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+margin-bottom: 30px;
+}
+header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 2.5rem;
+color: #8b3a3a;
+text-align: center;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+/* Navigation */
+nav ul {
+list-style: none;
+text-align: center;
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+}
+nav ul li a {
+text-decoration: none;
+color: #8b3a3a;
+font-weight: 600;
+font-size: 1.1rem;
+transition: color 0.3s ease, transform 0.2s;
+display: inline-block;
+}
+nav ul li a:hover {
+color: #d9787a;
+transform: scale(1.05);
+}
+
+/* HERO SECTION - WITH PICTURES AND TEXT SIDE BY SIDE */
+#hero {
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(5px);
+padding: 40px 20px;
+border-radius: 30px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+margin: 20px auto;
+max-width: 900px;
+
+/* This makes text and picture sit side by side */
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+flex-wrap: wrap; /* Wraps them on small screens */
+}
+
+.hero-content {
+flex: 1;
+text-align: left;
+min-width: 250px;
+}
+.hero-content h2 {
+font-family: 'Playfair Display', serif;
+font-size: 2.8rem;
+color: #5a2c2c;
+margin-bottom: 15px;
+}
+.hero-content p {
+font-size: 1.2rem;
+color: #6b4b4b;
+margin-bottom: 25px;
+}
+
+.hero-image {
+flex: 1;
+text-align: center;
+min-width: 250px;
+}
+.hero-image img {
+max-width: 100%;
+height: auto;
+width: 350px; /* Controls the nice small size of the cake picture */
+border-radius: 20px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* The Pink Button */
+.cta-button {
+display: inline-block;
+background-color: #d9787a;
+color: #ffffff;
+padding: 14px 35px;
+text-decoration: none;
+border-radius: 50px;
+font-weight: 600;
+font-size: 1.1rem;
+box-shadow: 0 4px 15px rgba(217, 120, 122, 0.4);
+transition: all 0.3s ease;
+}
+.cta-button:hover {
+background-color: #c25e60;
+transform: translateY(-3px);
+box-shadow: 0 6px 20px rgba(217, 120, 122, 0.5);
+}
+
+/* Intro Section (Where the 2nd picture goes) */
+#intro {
+text-align: center;
+padding: 30px 0;
+max-width: 700px;
+margin: 0 auto;
+}
+#intro h3 {
+font-family: 'Playfair Display', serif;
+font-size: 2rem;
+color: #5a2c2c;
+margin-bottom: 10px;
+}
+
+/* Styling for the SECOND cute picture */
+.cute-bottom-image {
+text-align: center;
+margin-top: 20px;
+}
+.cute-bottom-image img {
+width: 250px; /* Small cute size */
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+background-color: #f5e5e5;
+color: #5a3e3e;
+text-align: center;
+padding: 20px;
+margin-top: auto;
+border-top: 1px solid #e5d0d0;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>Sunrise Bakery</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Our Products</a></li>
+<li><a href="enquiry.html">Enquire</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="container">
+
+<!-- SECTION 1: Words on left, Cake1.png on right -->
+<section id="hero">
+<div class="hero-content">
+<h2>Freshly Baked, Daily</h2>
+<p>Bringing the warmth of fresh bread and delicious cakes to Roodepoort.</p>
+<a href="services.html" class="cta-button">View Our Cakes</a>
+</div>
+
+<div class="hero-image">
+<img src="images/Cake1.png" alt="Delicious layered cake">
+</div>
+</section>
+
+<!-- SECTION 2: Words with Cupcakes2.png nicely below -->
+<section id="intro">
+<h3>Welcome to Sunrise Bakery</h3>
+<p>Founded in 2015, we are a family-run business dedicated to making affordable, high-quality baked goods for our community.</p>
+
+<div class="cute-bottom-image">
+<img src="images/Cupcakes2.png" alt="Cute cupcakes">
+</div>
+</section>
+
+</div>
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2026 Sunrise Bakery. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
