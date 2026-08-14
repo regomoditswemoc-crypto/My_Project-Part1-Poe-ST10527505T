@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Sunrise Bakery</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+background: linear-gradient(135deg, #fff5f5 0%, #ffe4e1 100%);
+font-family: 'Open Sans', sans-serif;
+color: #5a3e3e;
+line-height: 1.6;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 20px 0; }
+
+header {
+background-color: rgba(255, 255, 255, 0.85);
+padding: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+margin-bottom: 30px;
+}
+header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 2.5rem;
+color: #8b3a3a;
+text-align: center;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+nav ul {
+list-style: none;
+text-align: center;
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+}
+nav ul li a {
+text-decoration: none;
+color: #8b3a3a;
+font-weight: 600;
+font-size: 1.1rem;
+transition: color 0.3s ease, transform 0.2s;
+display: inline-block;
+}
+nav ul li a:hover { color: #d9787a; transform: scale(1.05); }
+
+/* ---- ABOUT PAGE WITH PICTURES ---- */
+.content-page {
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(5px);
+padding: 40px 30px;
+border-radius: 30px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+margin: 20px auto;
+max-width: 800px;
+text-align: center;
+}
+.content-page h2 {
+font-family: 'Playfair Display', serif;
+font-size: 2.2rem;
+color: #5a2c2c;
+margin-bottom: 20px;
+}
+.content-page h3 {
+font-family: 'Playfair Display', serif;
+color: #8b3a3a;
+margin-top: 25px;
+margin-bottom: 10px;
+}
+
+/* Styling for the cute pictures on the About page */
+.about-pictures {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+margin: 30px 0;
+}
+.about-pictures img {
+width: 250px; /* Nice size */
+height: 250px;
+object-fit: cover;
+border-radius: 20px; /* Rounded corners */
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+border: 3px solid #fff;
+}
+
+footer {
+background-color: #f5e5e5;
+color: #5a3e3e;
+text-align: center;
+padding: 20px;
+margin-top: auto;
+border-top: 1px solid #e5d0d0;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>Sunrise Bakery</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Our Products</a></li>
+<li><a href="enquiry.html">Enquire</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="container">
+<section class="content-page">
+
+<!-- Pictures section -->
+<div class="about-pictures">
+<!-- THIS IS THE BEAUTIFUL SHOP PICTURE YOU ADDED -->
+<img src="images/bakery1.png" alt="Our beautiful bakery shop">
+
+<!-- If you have the cake picture, we can use it here too -->
+<img src="images/Cake1.png" alt="Our delicious cakes">
+</div>
+
+<h2>About Sunrise Bakery</h2>
+<p>Sunrise Bakery was founded in 2015 by Nomvula Dlamini in Roodepoort, Johannesburg. It started as a small home-based baking business and grew into a shop after two years because of steady demand from the surrounding neighbourhood.</p>
+
+<h3>Our Mission</h3>
+<p>To bake fresh, affordable bread and cakes for families and local businesses in Roodepoort every day.</p>
+
+<h3>Our Vision</h3>
+<p>To become the most trusted bakery brand in Johannesburg, known for quality baking and friendly service.</p>
+</section>
+</div>
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2026 Sunrise Bakery. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
