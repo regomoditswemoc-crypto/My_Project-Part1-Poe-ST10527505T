@@ -1,149 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | Sunrise Bakery</title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap');
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-background: linear-gradient(135deg, #fff5f5 0%, #ffe4e1 100%);
-font-family: 'Open Sans', sans-serif;
-color: #5a3e3e;
-line-height: 1.6;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 20px 0; }
-
-header {
-background-color: rgba(255, 255, 255, 0.85);
-padding: 25px 0;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-margin-bottom: 30px;
-}
-header h1 {
-font-family: 'Playfair Display', serif;
-font-size: 2.5rem;
-color: #8b3a3a;
-text-align: center;
-letter-spacing: 2px;
-margin-bottom: 15px;
-}
-
-nav ul {
-list-style: none;
-text-align: center;
-display: flex;
-justify-content: center;
-gap: 30px;
-flex-wrap: wrap;
-}
-nav ul li a {
-text-decoration: none;
-color: #8b3a3a;
-font-weight: 600;
-font-size: 1.1rem;
-transition: color 0.3s ease, transform 0.2s;
-display: inline-block;
-}
-nav ul li a:hover { color: #d9787a; transform: scale(1.05); }
-
-/* ---- CONTACT PAGE SPECIFIC STYLES ---- */
-.content-page {
-background: rgba(255, 255, 255, 0.6);
-backdrop-filter: blur(5px);
-padding: 40px 30px;
-border-radius: 30px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-margin: 20px auto;
-text-align: center;
-}
-.content-page h2 {
-font-family: 'Playfair Display', serif;
-font-size: 2.2rem;
-color: #5a2c2c;
-margin-bottom: 30px;
-}
-
-.contact-info {
-display: flex;
-flex-direction: column;
-gap: 25px;
-max-width: 500px;
-margin: 0 auto;
-}
-.contact-info h3 {
-font-family: 'Playfair Display', serif;
-color: #8b3a3a;
-margin-bottom: 5px;
-}
-.contact-info p {
-color: #5a3e3e;
-}
-
-footer {
-background-color: #f5e5e5;
-color: #5a3e3e;
-text-align: center;
-padding: 20px;
-margin-top: auto;
-border-top: 1px solid #e5d0d0;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sunrise Bakery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header>
-<div class="container">
-<h1>Sunrise Bakery</h1>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Us</a></li>
-<li><a href="services.html">Our Products</a></li>
-<li><a href="enquiry.html">Enquire</a></li>
-<li><a href="contact.html">Contact Us</a></li>
-</ul>
-</nav>
-</div>
-</header>
+    <header>
+        <div class="container">
+            <h1>Sunrise Bakery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Products</a></li>
+                    <li><a href="enquiry.html">Enquire</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
-<div class="container">
-<section class="content-page">
-<h2>Get in Touch</h2>
+    <main>
+        <div class="container">
+            <section class="content-page">
+                <h2>Get in Touch</h2>
+                <div class="contact-info">
+                    <div>
+                        <h3>Shop Address</h3>
+                        <p>Roodepoort, Johannesburg</p>
+                    </div>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Friday: 7:00 AM - 6:00 PM<br>
+                        Saturday: 8:00 AM - 3:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                    <div>
+                        <h3>Contact Details</h3>
+                        <p><strong>Phone / WhatsApp:</strong> 0629099307</p>
+                        <p><strong>Email:</strong> info@sunrisebakeryjhb.co.za</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-<div class="contact-info">
-<div>
-<h3>Shop Address</h3>
-<p>Roodepoort, Johannesburg</p>
-</div>
+    <footer>
+        <div class="container">
+            <p>You can also find us:</p>
+            <div class="social-media-links">
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/27629099307" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2026 Sunrise Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="topBtn" title="Go to top">Top</button>
 
-<div>
-<h3>Opening Hours</h3>
-<p>Monday - Friday: 7:00 AM - 6:00 PM<br>
-Saturday: 8:00 AM - 3:00 PM<br>
-Sunday: Closed</p>
-</div>
-
-<div>
-<h3>Contact Details</h3>
-<p><strong>Phone / WhatsApp:</strong> 0629099307</p>
-<p><strong>Email:</strong> info@sunrisebakeryjhb.co.za</p>
-</div>
-</div>
-</section>
-</div>
-</main>
-
-<footer>
-<div class="container">
-<p>&copy; 2026 Sunrise Bakery. All rights reserved.</p>
-</div>
-</footer>
+    <script>
+        var mybutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        if(mybutton){ mybutton.onclick = function() { topFunction() }; }
+    </script>
 </body>
 </html>
