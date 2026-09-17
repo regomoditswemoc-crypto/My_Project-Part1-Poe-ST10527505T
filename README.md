@@ -55,7 +55,7 @@ What I did in Part 2:
 - Pushed everything to GitHub.
 
 ## Changelog
-### [Part 2] - September 2026
+### [Part 2]
 - Created style.css and linked it to all pages.
 - Added pink and cream colours to the whole site.
 - Styled buttons, forms and the footer.
