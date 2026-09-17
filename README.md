@@ -66,7 +66,7 @@ What I did in Part 2:
 - Added a custom "Thank You" popup for the enquiry form.
 - Tested the site on Chrome and Edge.
 
-### [Part 1] - August 2026
+### [Part 1] 
 - Set up the project folder and files.
 - Built 5 HTML pages.
 - Added header, nav, main and footer tags to each page.
