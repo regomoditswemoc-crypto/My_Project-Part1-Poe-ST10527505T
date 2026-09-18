@@ -25,12 +25,7 @@ Pages on the Site
 - **Our Products** (services.html): The bread, cupcakes and cakes we sell with prices.
 - **Enquire** (enquiry.html): A form to order a custom cake.
 - **Contact Us** (contact.html): Our address, opening hours, phone and email.
-- 
-Milestone,Date,Deliverable
-Part 1,14 August 2026,"Proposal, research, HTML structure, GitHub repo"
-Part 2,18 September 2026,"External CSS, responsive design, README updates"
-Part 3,TBC,"JavaScript, forms, SEO, final submission"
-
+  
 
 
 ## Folder Structure
