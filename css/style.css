@@ -1,1 +1,252 @@
+/* =========================================================
+             SUNRISE BAKERY  MAIN STYLESHEET 
+   ========================================================= */
 
+/* GLOBAL FONTS & BASE STYLES (Used on every page) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe4e1 100%);
+    font-family: 'Open Sans', sans-serif;
+    color: #5a3e3e;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 20px 0; }
+
+
+/* ---------------------------------------------------------
+   HEADER & NAVIGATION MENU (Appears on every page)
+   --------------------------------------------------------- */
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 25px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #8b3a3a;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #8b3a3a;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.2s;
+    display: inline-block;
+}
+nav ul li a:hover { color: #d9787a; transform: scale(1.05); }
+
+
+/* ---------------------------------------------------------
+   HOMEPAGE (index.html)
+   --------------------------------------------------------- */
+#hero {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 40px 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin: 20px auto;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.hero-content { flex: 1; text-align: left; min-width: 250px; }
+.hero-content h2 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #5a2c2c; margin-bottom: 15px; }
+.hero-content p { font-size: 1.2rem; color: #6b4b4b; margin-bottom: 25px; }
+.hero-image { flex: 1; text-align: center; min-width: 250px; }
+.hero-image img { max-width: 100%; height: auto; width: 350px; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+
+#intro { text-align: center; padding: 30px 0; max-width: 700px; margin: 0 auto; }
+#intro h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #5a2c2c; margin-bottom: 10px; }
+
+
+/* ---------------------------------------------------------
+   ABOUT US PAGE (about.html)
+   --------------------------------------------------------- */
+.content-page {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+.content-page h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #5a2c2c; margin-bottom: 20px; }
+.content-page h3 { font-family: 'Playfair Display', serif; color: #8b3a3a; margin-top: 25px; margin-bottom: 10px; }
+.about-pictures { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 30px 0; }
+.about-pictures img { width: 250px; height: 250px; object-fit: cover; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 3px solid #fff; }
+
+
+/* ---------------------------------------------------------
+   PRODUCTS / SERVICES PAGE (services.html)
+   --------------------------------------------------------- */
+/* 6. Product Grid (Services Page) */
+.product-grid { display: flex; flex-direction: column; gap: 20px; text-align: left; }
+.product-item { 
+    background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); border-left: 5px solid #d9787a;
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.product-item img { width: 100px; height: 100px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
+.product-text { flex: 1; text-align: center; }
+/* ---------------------------------------------------------
+   ENQUIRY FORM PAGE (enquiry.html)
+   --------------------------------------------------------- */
+form { display: flex; flex-direction: column; max-width: 600px; margin: 0 auto; text-align: left; }
+form label { margin-top: 15px; font-weight: 600; color: #5a2c2c; }
+form input, form select { padding: 12px; margin-top: 5px; border: 1px solid #e0d0d0; border-radius: 10px; background-color: #fff; width: 100%; font-family: 'Open Sans', sans-serif; }
+form input:focus, form select:focus { outline: 2px solid #d9787a; border: none; }
+
+
+/* ---------------------------------------------------------
+   CONTACT PAGE (contact.html)
+   --------------------------------------------------------- */
+.contact-info { display: flex; flex-direction: column; gap: 25px; max-width: 500px; margin: 0 auto; }
+.contact-info h3 { font-family: 'Playfair Display', serif; color: #8b3a3a; margin-bottom: 5px; }
+
+
+/* ---------------------------------------------------------
+   BUTTONS (Used on Home & Services pages)
+   --------------------------------------------------------- */
+.cta-button {
+    display: inline-block;
+    background-color: #d9787a;
+    color: #ffffff;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(217, 120, 122, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.cta-button:hover { background-color: #c25e60; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(217, 120, 122, 0.5); }
+
+
+/* ---------------------------------------------------------
+   FOOTER & SOCIAL MEDIA ICONS (Appears on every page)
+   --------------------------------------------------------- */
+footer { background-color: #f5e5e5; color: #5a3e3e; text-align: center; padding: 20px; margin-top: auto; border-top: 1px solid #e5d0d0; }
+.social-media-links { text-align: center; margin-bottom: 20px; }
+.social-media-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    color: #8b3a3a;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.social-media-links a:hover { background-color: #d9787a; color: #ffffff; transform: translateY(-3px); }
+
+/* Back to Top Button */
+#topBtn {
+    display: none;         /* Hidden by default */
+    position: fixed;       /* Floats on the screen */
+    bottom: 20px;          /* 20px from the bottom */
+    right: 30px;           /* 30px from the right side */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #d9787a;  /* Pink background */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;   /* Rounded corners */
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+#topBtn:hover { 
+    background-color: #c25e60; 
+    transform: translateY(-3px); 
+}
+/* ---------------------------------------------------------
+            RESPONSIVE DESIGN 
+   --------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    header h1 { font-size: 1.8rem; }
+    nav ul { flex-direction: column; gap: 15px; text-align: center; }
+    #hero { flex-direction: column; text-align: center; }
+    .hero-content, .hero-image { min-width: 100%; }
+    .hero-image img { width: 80%; }
+    form input, form select, .cta-button { width: 100%; }
+    .about-pictures img { width: 100%; height: auto; }
+}
+/* =========================================
+       THANK YOU  (Pink & Burgundy)
+   ========================================= */
+.popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(90, 62, 62, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe4e1 100%); /* Pink background */
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 450px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    border: 3px solid #8b3a3a; /* Burgundy border */
+    animation: popIn 0.3s ease-out;
+}
+
+.popup-box h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8b3a3a; /* BURGUNDY HEADING */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.popup-box p {
+    font-size: 1.1rem;
+    color: #5a3e3e;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
