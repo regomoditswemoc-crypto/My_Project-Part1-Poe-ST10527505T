@@ -80,55 +80,7 @@
         </div>
     </div>
 
-<script>
-    // 1. FORM VALIDATION AND POPUP
-    document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault(); // Stops the page from reloading
-        
-        // Get the values the user typed in
-        let name = document.getElementById("name").value.trim();
-        let phone = document.getElementById("contact").value.trim();
-        
-        // --- VALIDATION CHECKS ---
-        
-        // Check if name has at least 2 letters
-        if (name.length < 2) {
-            alert("Error: Please enter a valid Full Name (at least 2 letters).");
-            return; // Stops the function here
-        }
-        
-        // Check if phone number has at least 10 digits
-        if (phone.length < 10) {
-            alert("Error: Please enter a valid Contact Number (at least 10 digits).");
-            return; // Stops the function here
-        }
-
-        // --- IF VALIDATION PASSES, SHOW POPUP ---
-        document.getElementById("thankYouPopup").style.display = "flex"; 
-        this.reset(); // Clears the form
-    });
-
-    // 2. CLOSE POPUP
-    function closePopup() {
-        document.getElementById("thankYouPopup").style.display = "none";
-    }
-
-    // 3. BACK TO TOP BUTTON
-    var mybutton = document.getElementById("topBtn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    if(mybutton){ mybutton.onclick = function() { topFunction() }; }
-</script>
+<script src="js/script.js"></script>
    
 
 </body>
