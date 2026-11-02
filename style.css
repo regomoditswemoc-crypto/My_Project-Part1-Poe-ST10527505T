@@ -106,13 +106,13 @@ nav ul li a:hover { color: #d9787a; transform: scale(1.05); }
    PRODUCTS / SERVICES PAGE (services.html)
    --------------------------------------------------------- */
 /* 6. Product Grid (Services Page) */
-.product-grid { display: flex; flex-direction: column; gap: 20px; text-align: left; }
+.product-grid { display: flex; flex-direction: column; gap: 20px; text-align: left; width: 100%;}
 .product-item { 
     background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); border-left: 5px solid #d9787a;
     display: flex; align-items: center; justify-content: space-between; gap: 20px;
 }
 .product-item img { width: 100px; height: 100px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
-.product-text { flex: 1; text-align: center; }
+.product-text { flex: 1; text-align: left; }
 /* ---------------------------------------------------------
    ENQUIRY FORM PAGE (enquiry.html)
    --------------------------------------------------------- */
@@ -195,7 +195,53 @@ footer { background-color: #f5e5e5; color: #5a3e3e; text-align: center; padding:
     background-color: #c25e60; 
     transform: translateY(-3px); 
 }
-/* ---------------------------------------------------------
+/* Google Map Styling */
+.map-container {
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 3px solid #8b3a3a;
+}
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+/* PART 3: CSS ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the Hero section and Content Pages */
+#hero, .content-page {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Make buttons pulse slightly when hovered */
+.cta-button {
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+/* -------
+--------------------------------------------------
             RESPONSIVE DESIGN 
    --------------------------------------------------------- */
 @media screen and (max-width: 768px) {
