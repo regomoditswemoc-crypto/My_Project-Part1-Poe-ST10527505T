@@ -78,14 +78,14 @@ What I did in Part 2:
 
 ## Part 3
 What I did in Part 3:
-- Added JavaScript validation to the enquiry form (checks name and phone number length).
-- Created a dedicated `js` folder with a `script.js` file to handle all JavaScript functionality.
-- Added CSS animations (fade-in and button pulse) for a better user experience.
-- Added a Google Maps embed to the Contact page.
-- Added SEO meta descriptions to all HTML pages.
-- Created a `robots.txt` file to allow search engines to index the site.
-- Created a `sitemap.xml` file to help search engines understand the site structure.
-- Deployed the final website live on GitHub Pages.
+- I Added JavaScript validation to the enquiry form (checks name and phone number length).
+-I Created a dedicated `js` folder with a `script.js` file to handle all JavaScript functionality.
+-I Added CSS animations (fade-in and button pulse) for a better user experience.
+-I Added a Google Maps embed to the Contact page.
+-I Added SEO meta descriptions to all HTML pages.
+-I Created a `robots.txt` file to allow search engines to index the site.
+-I Created a `sitemap.xml` file to help search engines understand the site structure.
+-Lastly Deployed the final website live on GitHub Pages.
 
 **Live Link:** https://regomoditswemoc-crypto.github.io/My_Project-Part1-Poe-ST10527505T/
 
