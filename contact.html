@@ -28,6 +28,10 @@
         <div class="container">
             <section class="content-page">
                 <h2>Get in Touch</h2>
+                <!-- Google Map-->
+                 <div class="map-containter">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114694.79593808757!2d27.885470191015628!3d-26.059314916997444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959fc44e94e52b%3A0x21e34710a49d1963!2sRoodepoort!5e0!3m2!1sen!2sza!4v1793629436516!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                 </div>
                 <div class="contact-info">
                     <div>
                         <h3>Shop Address</h3>
@@ -62,21 +66,6 @@
     </footer>
     <button id="topBtn" title="Go to top">Top</button>
 
-    <script>
-        var mybutton = document.getElementById("topBtn");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        if(mybutton){ mybutton.onclick = function() { topFunction() }; }
-    </script>
+   <script src="js/script.js"></script>
 </body>
 </html>
