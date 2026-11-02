@@ -76,6 +76,24 @@ What I did in Part 2:
 - Added Google Fonts.
 - Set up the GitHub repository.
 
+## Part 3
+What I did in Part 3:
+- Added JavaScript validation to the enquiry form (checks name and phone number length).
+- Created a dedicated `js` folder with a `script.js` file to handle all JavaScript functionality.
+- Added CSS animations (fade-in and button pulse) for a better user experience.
+- Added a Google Maps embed to the Contact page.
+- Added SEO meta descriptions to all HTML pages.
+- Created a `robots.txt` file to allow search engines to index the site.
+- Created a `sitemap.xml` file to help search engines understand the site structure.
+- Deployed the final website live on GitHub Pages.
+
+**Live Link:** https://regomoditswemoc-crypto.github.io/My_Project-Part1-Poe-ST10527505T/
+
+### Changelog Update
+| Date | Version | Change Description |
+| :--- | :--- | :--- |
+| 02/11/2026 | v3.0 | Added JS validation, JS folder, CSS animations, Google Map, SEO tags, robots.txt, sitemap.xml, and deployed live on GitHub Pages. |
+
 ## References
 Font Awesome. (2026). Free Icon Library. Available at: https://fontawesome.com [Accessed 17 September 2026].
 
